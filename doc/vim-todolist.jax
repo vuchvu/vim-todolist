@@ -41,10 +41,6 @@ https://github.com/user/vim-todolist.vim
 ------------------------------------------------------------------------------
 変数						*vim-todolist-valiables*
 
-g:todolist#titleMark				*todolist#titleMark*
-	タイトルに使う記号を指定する。
-	規定値は▷。(INSERTモード中、<C-k>+Tr)
-
 g:todolist#highlight				*todolist#highlight*
 	todoファイルのシンタックスハイライトのON/OFFを切り替える。
 	規定値は1。(ハイライトON)
@@ -52,6 +48,10 @@ g:todolist#highlight				*todolist#highlight*
 g:todolist#TodoTitle_highlight			*todolist#TodoTitle_highlight*
 	タイトルのシンタックスハイライトを指定する。
 	規定値はStatusLine。
+
+g:todolist#titleMark				*todolist#titleMark*
+	タイトルに使う記号を指定する。
+	規定値は▷。(INSERTモード中、<C-k>+Tr)
 
 g:todolist#Target_highlight			*todolist#Target_highlight*
 	最終目標の行のシンタックスハイライトを指定する。
