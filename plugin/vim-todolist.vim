@@ -1,6 +1,6 @@
 " todo-list.vim - create todo-list with Vim
 " Maintainer: vuchvu
-" Version: 0.1
+" Version: 0.2
 
 if exists('g:loaded_todorules')
 	finish

@@ -1,6 +1,6 @@
 " todo-list.vim - create todo-list with Vim
 " Maintainer: vuchvu
-" Version: 0.1
+" Version: 0.2
 
 if exists('b:current_syntax')
 	finish
@@ -9,9 +9,10 @@ endif
 let b:current_syntax = 'todo'
 
 let s:highlight = get(g:, 'todolist#highlight', 1)
+let s:titleMark = get(g:, 'todolist#titleMark', '▷')
 
 if s:highlight==1
-	syntax match TodoTitle /▷.\{,}/
+	execute "syntax match TodoTitle /".s:titleMark.".\\{,}/"
 	syntax match Target /.├最終目標.\{,}/
 	syntax match Done /■.\{,}/
 	

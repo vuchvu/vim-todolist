@@ -1,10 +1,12 @@
 " todo-list.vim - create todo-list with Vim
 " Maintainer: vuchvu
-" Version: 0.1
+" Version: 0.2
+
+let s:titleMark = get(g:, 'titleMark', '▷')
 
 " 下の行に新しいタイトルを追加する
 function! todolist#NewTodo() abort
-	call append('.',['','▷', '□├最終目標', '□│├'])
+	call append('.',['', s:titleMark, '□├最終目標', '□│├'])
 endfunction
 
 " 下の行に新しい項目を追加する
